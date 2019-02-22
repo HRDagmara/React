@@ -1,4 +1,4 @@
-var movies = [
+var movie = [
     {
         id: 1,
         title: 'Harry Potter',
@@ -43,11 +43,11 @@ var movies = [
     }
 ];
 
-var moviesElements = movies.map(function (movie) {
+var moviesElements = movie.map(function (movie) {
     return React.createElement('li', { key: movie.id },
         React.createElement('h2', {}, movie.title),
-        React.createElement('p', {}, movie.desc),
-        React.createElement('p', {} movie.src)
+        React.createElement('h3', {}, movie.desc),
+        React.createElement('img', { src: movie.src })
     );
 });
 
